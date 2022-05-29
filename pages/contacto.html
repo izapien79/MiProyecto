@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="./img/icon_heexac.png" type="image/x-icon"><!-- icono en pestaña -->
+    <link rel="stylesheet" href="../css/estilos.css"> <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400;500&family=Estonia&family=M+PLUS+1:wght@400;500&family=Poppins:wght@500&display=swap" rel="stylesheet"> <!-- Font Famil -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- icon Awesome -->
+</head>
+<body>
+    <div class="padre-con">
+        <header class="header-con">
+            <div class="menu-con">
+                <div class="logo-con">
+                    <a href="../index.html">Herramientas de la Experiencia, A. C.</a>
+                </div>                
+                <nav class="nav-con">
+                    <a href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+                    <a href="../pages/nosotros.html"><i class="fa-solid fa-people-group"></i> Nosotros</a>
+                    <a href="../pages/cursotaller.html"><i class="fa-solid fa-pen-ruler"></i> Cursos y Talleres</a>
+                    <a href="../pages/agricultura.html"><i class="fa-brands fa-pagelines"></i> Agricultura</a>
+                    <a href="../pages/contacto.html"><i class="fa-solid fa-chalkboard-user"></i> Contacto</a>
+                </nav>
+                <!-- <div class="redes">
+                    <div><a href="https://www.facebook.com/" target="_blank">
+                        <i class="fa-brands fa-facebook-square"></i>
+                    </a></div>
+                    <div><a href="https://www.instagram.com" target="_blank">
+                        <i class="fa-brands fa-instagram-square"></i>
+                    </a></div>   
+                </div> -->
+            </div>
+            <div class="texto-principal">
+                <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet corporis hic sed consectetur impedit modi distinctio obcaecati velit. Quibusdam dolore mollitia eius in illo deserunt nisi temporibus, distinctio rem fuga, assumenda vero blanditiis ratione quas porro. Magni dolore unde, temporibus, vel ex laborum perferendis accusamus tempora dolores sed deserunt quibusdam!</h1>
+            </div>
+        </header>
+
+    <main>
+        <section class="contenedor_contacto">
+            <h1>Contacto</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet corporis hic sed consectetur impedit modi distinctio obcaecati velit. Quibusdam dolore mollitia eius in illo deserunt nisi temporibus, distinctio rem fuga, assumenda vero blanditiis ratione quas porro. Magni dolore unde, temporibus, vel ex laborum perferendis accusamus tempora dolores sed deserunt quibusdam!</p>
+         </section>
+
+
+
+        <h1>Contáctanos</h1>
+        <div>
+            <form action="enviar.php" method="get" enctype="text/plain">
+                <fieldset>
+                    <legend>Ingresa Tus Datos</legend>
+        
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" name="nombre" placeholder="Aqui tu nombre y apellidos" requerired>
+                    <br>
+                    <label for="correo">Correo: </label>
+                    <input type="text" name="correo" placeholder="Aqui tu correo electronico" requerired>
+                    <br>
+                    <label for="telefono">Telefono: </label>
+                    <input type="text" name="tel" placeholder="Aqui tu telefono" requerired>
+                    <hr>
+        
+                    <div>Que te gustaria aprender?</div>
+                    <label for="taller">Taller</label>
+                    <input type="radio" name="aprender" value="taller">
+                    <label for="curso">Cursos</label>
+                    <input type="radio" name="aprender" value="curso">
+                    <label for="agricultura">Agricultura</label>
+                    <input type="radio" name="aprender" value="agricultura">
+                    <hr>
+
+                    <div>Que tipo de Cosecha haz  hecho?</div>
+                    <label for="talla">Maiz</label>
+                    <input type="checkbox" name="cosecha" value="maiz">
+                    <label for="talla">Hongos</label>
+                    <input type="checkbox" name="cosecha" value="hongo">
+                    <label for="talla">Limones</label>
+                    <input type="checkbox" name="cosecha" value="limon">
+                    <label for="talla">Naranjas</label>
+                    <input type="checkbox" name="cosecha" value="naranja">
+        
+                    <h3>Dejanos tus comentarios</h3>
+                    <textarea name="comentario" id="comentarios" cols="60" rows="10"></textarea><br>
+        
+                    <!--Botones para enviar registro o corregir informacion-->
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                    <input type="button" value="Para JS">
+        
+                </fieldset>
+            </form>
+        </div>
+
+    </main>
+
+    <footer class="footerpadre">
+        <div class="footerpadre02">
+            <div class="footerpadre02--enlaces">
+                <h4>Enlaces</h4>
+                    <a href="../index.html">Inicio</a>
+                    <a href="../pages/nosotros.html">Nosotros</a>
+                    <a href="../pages/cursotaller.html">Cursos y Talleres</a>
+                    <a href="../pages/agricultura.html">Agricultura</a>
+                    <a href="../pages/contacto.html">Contacto</a>
+            </div>
+        
+            <div class="footerpadre02--redes">
+                <h4>Siguenos en Redes</h4>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook-square"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram-square"></i>
+                </a>
+            </div>
+
+            <div class="footerpadre02--contacto">
+                <h4>Contactanos</h4>
+                <a href="mailto:herramientasdelaexperiencia@hotmail.com" target="_blank">
+                    <i class="fa-solid fa-square-envelope"></i>
+                </a>
+                <a href="https://web.whatsapp.com/" target="_blank">
+                    <i class="fa-brands fa-whatsapp-square"></i>
+                </a>
+            </div>
+            
+                
+        </div>
+        <p>© 2022 Herramientas de la Experiencia, A. C. - Todos los derechos reservados</p>
+
+    </footer>
+</div>
+</body>
+</html>

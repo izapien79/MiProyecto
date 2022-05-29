@@ -1,0 +1,749 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.header {
+    background: url('https://i.picsum.photos/id/143/3600/2385.jpg?hmac=gSMmnYrmuP5BJ47kmErfYdYu1L1GLePM1SNm-D2lqiA');
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex; /* header padre siempre tiene que tener DISPLAY FLEX. y por defecto es row direction y por esto se pone uno al lado del otro */
+    flex-flow: column nowrap;
+}
+.menu {
+    background: rgba(0, 0, 0, .8);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 120px;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid rgba (255, 255, 255, .5);
+    border: 1px solid #fff;
+    position: fixed;
+}
+.logo {
+    flex:1 1 auto;
+}
+    .logo a {
+        color:#f7e709;
+        font-family: 'Courgette', cursive;
+        font-size: 35px;
+        margin-left: 20px;
+    }
+    .logo a:hover{
+        color:#f7e709;
+    }
+
+.nav {
+    flex:5 1 auto;
+    align-self: flex-end;
+}
+    .nav a {
+        color: #fff;
+        font-size: 13px;
+        text-transform: uppercase;/* MAYUSCULAS */
+        padding: 0 7px;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+    }
+    .nav a:hover{
+        color:#f7e709;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .nav a .fa-house {
+        font-size: 30px;
+        color:#f7e709;
+    }
+
+/* .redes { 
+    flex: 1 1 auto;
+    display: flex;
+}
+    .redes a {
+        font-size: 20px;
+        color: #fff;
+        padding: 0 8px;
+    }
+    .redes a:hover{
+        color:#f7e709;
+    } */
+
+.texto-principal {
+    /* background: #f07b3f; */
+    height: 580px;
+    display: flex;
+    align-items: center;
+    flex: auto;
+}
+h1 {
+    background: rgba(0, 0, 0, .5);
+    font-family: 'Courgette', cursive;
+    font-size: 30px;
+    color:#f7e709;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.9;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+/* Main CSS PAGINA INICIO */
+.section {
+    background: #000;
+    display: flex;
+}
+.articulos{
+    background: #f7f7f7;
+    flex: 2 1 auto; /* estable el tamaño de mi seccion 2 veces de 3 */
+    display: flex;
+    flex-flow: row wrap; /* para que queden uno a lado de otro o se pase a la sig fila*/
+}
+.article {
+    flex: 1 1 40%; /* estable tamaño de forma equivalente para todos */
+    color: #444;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 10px 20px 10px 20px;
+    flex: 1 1 45%;
+    background: gray;
+    border-radius: 10px;
+}
+.article img {
+    width: 100%;
+}
+.article a {
+    color: #fff;
+    font-size: 13px;
+    padding: 10px 10px;
+    background: #000;
+    margin: 10px 0;
+    display: inline-block;
+}
+.article a:hover{
+    background: #546cc3;
+}
+h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 0px 0 10px 0;
+    color:black;
+}
+.navegacion {
+    background: #000;
+    flex: 1 1 100%; /* ocupara el 100% de ancho */
+    margin: 10px;
+}
+    .navegacion a {
+        color:#fff;
+        font-size: 15px;
+        text-transform: uppercase;
+        padding: 0 10px;
+        letter-spacing: 2px;
+    }
+    .navegacion a:hover{
+        color:#f7e709;
+        font-weight: bold;
+    }
+
+
+/* Footer CSS */
+.footerpadre {
+    background-color: black;
+    padding: 10PX;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+.footerpadre p{
+    color: white;
+    font-weight: bold;
+}
+.footerpadre02 {
+    /* background-color: aqua; */
+    width: 95vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center; /* alinea horizoltalmente */
+    align-items: center; /* alinea verticalmente */
+    flex-wrap: wrap; /* por si no caben en la misma linea se acomode abajo */
+}
+.footerpadre02--enlaces {
+    width: 420px;
+    height: 80%;
+    /* background: blue; */
+    color: white;
+    /* font-weight: bold; */
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* letter-spacing: 5px; */
+}
+.footerpadre02--enlaces a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+.footerpadre02--enlaces a:hover{
+    color: #f7e709;
+    font-weight: bold;
+}
+.footerpadre02--redes {
+    width: 420px;
+    height: 80%;
+    color: white;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.footerpadre02--redes a {
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+.footerpadre02--contacto {
+    width: 420px;
+    height: 80%;
+    color: white;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footerpadre02--contacto a {
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+/* iconos redes */
+footer .fa-facebook-square {
+    color: yellow;
+}
+footer .fa-brands:hover{
+    color: green;
+}
+footer .fa-instagram-square {
+    color: yellow;
+}
+footer .fa-solid:hover{
+    color: green;
+}
+footer .fa-square-envelope {
+    color: yellow;
+}
+footer .fa-square-envelope:hover{
+    color: green;
+}
+footer .fa-whatsapp-square {
+    color: yellow;
+}
+footer .fa-whatsapp-square:hover{
+    color: green;
+}
+
+
+/* PAGINA NOSOTROS CSS */
+.padre-nos {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.header-nos {
+    background: url('https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY');
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex; /* header padre siempre tiene que tener DISPLAY FLEX. y por defecto es row direction y por esto se pone uno al lado del otro */
+    flex-flow: column nowrap;
+}
+.menu-nos {
+    background: rgba(0, 0, 0, .8);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 120px;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid rgba (255, 255, 255, .5);
+    border: 1px solid #fff;
+    position: fixed;
+}
+.logo-nos {
+    flex:1 1 auto;
+}
+    .logo-nos a {
+        color:#f7e709;
+        font-family: 'Courgette', cursive;
+        font-size: 35px;
+        margin-left: 20px;
+    }
+    .logo-nos a:hover{
+        color:#f7e709;
+    }
+
+.nav-nos {
+    flex:5 1 auto;
+    align-self: flex-end;
+}
+    .nav-nos a {
+        color: #fff;
+        font-size: 13px;
+        text-transform: uppercase;/* MAYUSCULAS */
+        padding: 0 7px;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+    }
+    .nav-nos a:hover{
+        color:#f7e709;
+        font-weight: bold;
+    }
+    .nav-nos a .fa-people-group {
+        font-size: 30px;
+        color:#f7e709;
+    }
+.texto-principal {
+    /* background: #f07b3f; */
+    height: 580px;
+    display: flex;
+    align-items: center;
+    flex: auto;
+}
+h1 {
+    background: rgba(0, 0, 0, .5);
+    font-family: 'Courgette', cursive;
+    font-size: 30px;
+    color:#f7e709;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.9;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.pnosotros { 
+    display: flex;
+    flex-direction: column;
+    background: #444;
+    margin: 10px;
+    padding: 5px;
+}
+.mision h3 { 
+    font-style: oblique;
+    font-size: 30px;
+    text-align: center;
+}
+.mision p {
+    text-align: justify;
+    word-spacing: 5px;
+}
+.vision h3 { 
+    font-style: oblique;
+    font-size: 30px;
+    text-align: center;
+}
+.vision p {
+    text-align: justify;
+    word-spacing: 5px;
+}
+.objetivo h3 { 
+    font-style: oblique;
+    font-size: 30px;
+    text-align: center;
+}
+.objetivo p {
+    text-align: justify;
+    word-spacing: 5px;
+}
+.tit-equipo { 
+    margin: 20px;
+    font-style: oblique;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+img {
+    width: 30%;
+}
+.flex-row { 
+    /* background: white; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.flex-row h3 { 
+    background-color: yellow;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 30px;
+
+}
+.column {
+    flex: 25%;
+    padding: 5px;
+}
+column img { 
+    margin-top: 5px;
+}
+
+
+
+/* PAGINA CURSOS Y TALLERES CSS */
+.padre-ct {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.header-ct {
+    background: url('https://i.picsum.photos/id/885/4000/2667.jpg?hmac=IrjRbqugGjfrXfEv6t65cpdv8j6EFpGT7ZOJipcgHJc');
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex; /* header padre siempre tiene que tener DISPLAY FLEX. y por defecto es row direction y por esto se pone uno al lado del otro */
+    flex-flow: column nowrap;
+}
+.menu-ct {
+    background: rgba(0, 0, 0, .8);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 120px;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid rgba (255, 255, 255, .5);
+    border: 1px solid #fff;
+    position: fixed;
+}
+.logo-ct {
+    flex:1 1 auto;
+}
+    .logo-ct a {
+        color:#f7e709;
+        font-family: 'Courgette', cursive;
+        font-size: 35px;
+        margin-left: 20px;
+    }
+    .logo-ct a:hover{
+        color:#f7e709;
+    }
+.nav-ct {
+    flex:5 1 auto;
+    align-self: flex-end;
+}
+    .nav-ct a {
+        color: #fff;
+        font-size: 13px;
+        text-transform: uppercase;/* MAYUSCULAS */
+        padding: 0 7px;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+    }
+    .nav-ct a:hover{
+        color:#f7e709;
+        font-weight: bold;
+    }
+    .nav-ct a .fa-pen-ruler {
+        font-size: 30px;
+        color:#f7e709;
+    }
+.texto-principal {
+    /* background: #f07b3f; */
+    height: 580px;
+    display: flex;
+    align-items: center;
+    flex: auto;
+}
+h1 {
+    background: rgba(0, 0, 0, .5);
+    font-family: 'Courgette', cursive;
+    font-size: 30px;
+    color:#f7e709;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.9;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+img { 
+    width: 100%;
+}
+.grid-container { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap:20px;
+    padding: 2px;
+    grid-auto-flow: dense;
+}
+.item1 { 
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item5 {
+    grid-column: 1 / span 3;
+}
+
+.grid-item { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color:gray;
+    border-radius: 1px solid rgb(255, 255,255);
+}
+
+.grid-item:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+/* Media querie Cursos y Talleres*/
+/* @media (min-width: 600px) {
+    .wide { 
+        grid-column: span 2;
+    }
+    
+    .tall {
+        grid-row: span 2;
+    }
+} */
+
+
+
+/* PAGINA AGRICULTURA CSS */
+.padre-ag {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.header-ag {
+    background: url('https://i.picsum.photos/id/107/5760/3840.jpg?hmac=pOr5LeKE8rivWSYuheeVgYtDjCNGouPkeFjx2TsbAoY');
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex; /* header padre siempre tiene que tener DISPLAY FLEX. y por defecto es row direction y por esto se pone uno al lado del otro */
+    flex-flow: column nowrap;
+}
+.menu-ag {
+    background: rgba(0, 0, 0, .8);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 120px;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid rgba (255, 255, 255, .5);
+    border: 1px solid #fff;
+    position: fixed;
+}
+.logo-ag {
+    flex:1 1 auto;
+}
+    .logo-ag a {
+        color:#f7e709;
+        font-family: 'Courgette', cursive;
+        font-size: 35px;
+        margin-left: 20px;
+    }
+    .logo-ag a:hover{
+        color:#f7e709;
+    }
+
+.nav-ag {
+    flex:5 1 auto;
+    align-self: flex-end;
+}
+    .nav-ag a {
+        color: #fff;
+        font-size: 13px;
+        text-transform: uppercase;/* MAYUSCULAS */
+        padding: 0 7px;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+    }
+    .nav-ag a:hover{
+        color:#f7e709;
+        font-weight: bold;
+    }
+    .nav-ag a .fa-pagelines {
+        font-size: 30px;
+        color:#f7e709;
+    }
+.texto-principal {
+    /* background: #f07b3f; */
+    height: 580px;
+    display: flex;
+    align-items: center;
+    flex: auto;
+}
+h1 {
+    background: rgba(0, 0, 0, .5);
+    font-family: 'Courgette', cursive;
+    font-size: 30px;
+    color:#f7e709;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.9;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* PAGINA CONTACTO CSS */
+.padre-con {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.header-con {
+    background: url('../img/georgie-cobbs-bKjHgo_Lbpo-unsplash.jpg');
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex; /* header padre siempre tiene que tener DISPLAY FLEX. y por defecto es row direction y por esto se pone uno al lado del otro */
+    flex-flow: column nowrap;
+}
+.menu-con {
+    background: rgba(0, 0, 0, .8);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 120px;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid rgba (255, 255, 255, .5);
+    border: 1px solid #fff;
+    position: fixed;
+}
+.logo-con {
+    flex:1 1 auto;
+}
+    .logo-con a {
+        color:#f7e709;
+        font-family: 'Courgette', cursive;
+        font-size: 35px;
+        margin-left: 20px;
+    }
+    .logo-con a:hover{
+        color:#f7e709;
+    }
+
+.nav-con {
+    flex:5 1 auto;
+    align-self: flex-end;
+}
+    .nav-con a {
+        color: #fff;
+        font-size: 13px;
+        text-transform: uppercase;/* MAYUSCULAS */
+        padding: 0 7px;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+    }
+    .nav-con a:hover{
+        color:#f7e709;
+        font-weight: bold;
+    }
+    .nav-con a .fa-chalkboard-user {
+        font-size: 30px;
+        color:#f7e709;
+    }
+.texto-principal {
+    /* background: #f07b3f; */
+    height: 580px;
+    display: flex;
+    align-items: center;
+    flex: auto;
+}
+h1 {
+    background: rgba(0, 0, 0, .5);
+    font-family: 'Courgette', cursive;
+    font-size: 30px;
+    color:#f7e709;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.9;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+/* Mediaqeries Responsive */
+@media all and (max-width: 1120px){
+    .section{
+        flex-direction: column;
+    }
+    /* .logo a {
+        font-size: 15px;
+    } */
+    menu {
+        flex-direction: colum;
+        height: auto;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .texto-principal{
+        height: 450px;
+    }
+
+}
+
+@media all and (max-width:600px){
+    .articulos { 
+        flex-direction: column;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .texto-principal{
+        height: 450px;
+    }
+    .logo a {
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width:762px){
+    .articulos { 
+        flex-direction: column;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .logo a {
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width:650px){
+    .off {
+        display: none;
+    }
+    .nav a {
+        font-size: 25px;
+    }
+    .logo a {
+        font-size: 15px;
+    }
+    /* .footerpadre {
+        display: flex;
+        flex-flow:column ;
+    }
+    .footerpadre02 {
+        display: flex;
+        flex-wrap: nowrap;
+    } */
+}

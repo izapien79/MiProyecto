@@ -83,29 +83,58 @@ a {
 
 .texto-principal {
     /* background: #f07b3f; */
-    height: 580px;
+    height: 400px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     flex: auto;
+    margin-top: 200px;
 }
-h1 {
-    background: rgba(0, 0, 0, .5);
+.texto-principal h1 {
+    background-color: rgba(0, 0, 0, .5);
     font-family: 'Courgette', cursive;
     font-size: 30px;
     color:#f7e709;
-    font-weight: 300;
+    font-weight: 200px;
     text-align: center;
     line-height: 1.9;
     margin-left: 100px;
     margin-right: 100px;
+    transition: all 3s;
 }
 
+h1:hover {
+    background-color:rgba(255, 255, 0, 0.63);
+    font-family: 'Courgette', cursive;
+    font-size: 30px;
+    color:black;
+    font-weight: 200px;
+    text-align: center;
+    line-height: 1.9;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
 
 /* Main CSS PAGINA INICIO */
 .section {
-    background: #000;
+    background: #444;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+.section-tit {
+    font-family: 'Courgette', cursive;
+    color: yellow;
+    font-style: oblique;
+    font-size: 50px;
+    word-spacing: 5px;
+    letter-spacing: 10px;
+    text-align: center;
+    margin: 20px;
+}
+
 .articulos{
     background: #f7f7f7;
     flex: 2 1 auto; /* estable el tamaño de mi seccion 2 veces de 3 */
@@ -158,7 +187,6 @@ h2 {
         color:#f7e709;
         font-weight: bold;
     }
-
 
 /* Footer CSS */
 .footerpadre {
@@ -318,65 +346,46 @@ footer .fa-whatsapp-square:hover{
         font-size: 30px;
         color:#f7e709;
     }
-.texto-principal {
-    /* background: #f07b3f; */
-    height: 580px;
-    display: flex;
-    align-items: center;
-    flex: auto;
-}
-h1 {
-    background: rgba(0, 0, 0, .5);
-    font-family: 'Courgette', cursive;
-    font-size: 30px;
-    color:#f7e709;
-    font-weight: 300;
-    text-align: center;
-    line-height: 1.9;
-    margin-left: 100px;
-    margin-right: 100px;
-}
 
 .pnosotros { 
     display: flex;
     flex-direction: column;
     background: #444;
-    margin: 10px;
+    font-family: 'Courgette', cursive;
+    color: yellow;
+    margin: 0;
     padding: 5px;
 }
-.mision h3 { 
+.pnosotros h2 {
+    color: yellow;
+    font-style: oblique;
+    font-size: 50px;
+    text-align: center;
+    margin: 20px;
+}
+.pnosotros h3 { 
     font-style: oblique;
     font-size: 30px;
     text-align: center;
+    margin: 10px;
+    padding: 10px;
 }
-.mision p {
+.pnosotros p {
     text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
     word-spacing: 5px;
-}
-.vision h3 { 
-    font-style: oblique;
-    font-size: 30px;
-    text-align: center;
-}
-.vision p {
-    text-align: justify;
-    word-spacing: 5px;
-}
-.objetivo h3 { 
-    font-style: oblique;
-    font-size: 30px;
-    text-align: center;
-}
-.objetivo p {
-    text-align: justify;
-    word-spacing: 5px;
+    color: white;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 .tit-equipo { 
     margin: 20px;
     font-style: oblique;
-    color: white;
+    color: yellow;
     font-size: 30px;
     text-align: center;
+    letter-spacing: 5px;
 }
 img {
     width: 30%;

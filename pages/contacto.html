@@ -41,15 +41,97 @@
         </header>
 
     <main>
-        <section class="contenedor_contacto">
-            <h1>Contacto</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet corporis hic sed consectetur impedit modi distinctio obcaecati velit. Quibusdam dolore mollitia eius in illo deserunt nisi temporibus, distinctio rem fuga, assumenda vero blanditiis ratione quas porro. Magni dolore unde, temporibus, vel ex laborum perferendis accusamus tempora dolores sed deserunt quibusdam!</p>
-         </section>
-
-
 
         <h1>Contáctanos</h1>
         <div>
+
+    <!-- FORMULARIO CON BOOTSTRAP  -->
+    <div class="container-cont">
+        <form class="row-cont g-3">
+            <div class="col-12">
+                    <label for="nombre" class="form-label">Nombre Completo: </label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre aquí">
+            </div>
+            <div class="col-md-6">
+                <label for="telefono" class="form-label">Telefono: </label>
+                <input type="telefono" class="form-control" id="telefono" placeholder="Tu numero a 10 digitos">
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Correo Electronico</label>
+                <input type="email" class="form-control" id="email" placeholder="@ejemplo.com">
+            </div>            
+            <div class="col-12">
+                <label for="domicilio" class="form-label">Domicilio: </label>
+                <input type="text" class="form-control" id="domicilio" placeholder="Calle  Num-ext  Num-int">
+            </div>
+            <div class="col-md-6">
+                <label for="ciudad" class="form-label">Ciudad: </label>
+                <input type="text" class="form-control" id="ciudad">
+            </div>
+            <div class="col-md-4">
+                <label for="estado" class="form-label">Estado</label>
+                <select id="estado" class="form-select">
+                    <option selected>Opcion 1</option>
+                    <option>Opcion 2</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="codpostal" class="form-label">C. P. : </label>
+                <input type="text" class="form-control" id="codpostal">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">Ya eres miembro</label>
+                </div>
+            </div>
+        </form>
+        <fieldset class="row mb-3">
+            <legend class="col-form-label col-sm-2 pt-0">¿Qué Actividad quisieras tomar?</legend>
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="taller" id="taller" value="opcion1" checked>
+                    <label class="form-check-label" for="taller">Taller</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="curso" id="curso" value="opcion2">
+                    <label class="form-check-label" for="curso">Curso</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="agricultura" id="agricultura" value="opcion3">
+                    <label class="form-check-label" for="agricultura">Agricultura</label>
+                </div>
+            </div>
+          </fieldset>
+          <fieldset>
+              <legend>Marca la siembra que te gustaria conocer</legend>
+            <div class="row mb-3">
+                <div class="col-sm-10 offset-sm-2">
+                    <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="maiz">
+                            <label class="form-check-label" for="gridCheck1">Maíz</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="hongos">
+                        <label class="form-check-label" for="gridCheck1">Hongos</label>
+                    </div>
+                </div>
+              </div>
+          </fieldset>
+          <div class="mb-3">
+            <label for="comentarios" class="form-label">Dejanos tus Comentarios</label>
+            <textarea class="form-control" id="comentarios" rows="3"></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+    </div>
+
+
+
+
+
+
             <form action="enviar.php" method="get" enctype="text/plain">
                 <fieldset>
                     <legend>Ingresa Tus Datos</legend>

@@ -467,10 +467,12 @@ column img {
     .nav-ct a:hover{
         color:#f7e709;
         font-weight: bold;
+        font-size: 15px;
     }
     .nav-ct a .fa-pen-ruler {
         font-size: 20px;
         color:#f7e709;
+        font-size: 20px;
     }
 .texto-principal {
     /* background: #f07b3f; */
@@ -588,10 +590,12 @@ img {
     .nav-ag a:hover{
         color:#f7e709;
         font-weight: bold;
+        font-size: 15px;
     }
     .nav-ag a .fa-pagelines {
         font-size: 20px;
         color:#f7e709;
+        font-size: 20px;
     }
 .texto-principal {
     /* background: #f07b3f; */
@@ -664,10 +668,12 @@ h1 {
     .nav-con a:hover{
         color:#f7e709;
         font-weight: bold;
+        font-size: 15px;
     }
     .nav-con a .fa-chalkboard-user {
         font-size: 30px;
         color:#f7e709;
+        font-size: 20px;
     }
 .texto-principal {
     /* background: #f07b3f; */

@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="shortcut icon" href="./img/icon_heexac.png" type="image/x-icon"><!-- icono en pestaña -->
+    <link rel="shortcut icon" href="../img/icon_heexac.png" type="image/x-icon"><!-- icono en pestaña -->
     <link rel="stylesheet" href="../css/estilos.css"> <!-- CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400;500&family=Estonia&family=M+PLUS+1:wght@400;500&family=Poppins:wght@500&display=swap" rel="stylesheet"> <!-- Font Famil -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- icon Awesome -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
     <div class="padre-con">
@@ -43,42 +45,48 @@
     <main>
 
         <h1>Contáctanos</h1>
-        <div>
+        <hr>
+    
 
     <!-- FORMULARIO CON BOOTSTRAP  -->
-    <div class="container-cont">
-        <form class="row-cont g-3">
+    <div class="container">
+        <form class="row g-3">
+
+            <div class="col-sm-10">
+                    <label for="inputnombre" class="form-label fw-bolder">Nombre Completo:</label>
+                    <input type="text" class="form-control fst-italic" id="inputnombre" placeholder="Escribe tu nombre aquí">
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputtelefono" class="form-label fw-bolder">Telefono:</label>
+                <input type="text" class="form-control fst-italic" id="inputtelefono" placeholder="Tu numero a 10 digitos">
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputEmail" class="form-label fw-bolder">Correo Electronico:</label>
+                <input type="email" class="form-control fst-italic" id="inputEmail" placeholder="@ejemplo.com">
+            </div>
+
             <div class="col-12">
-                    <label for="nombre" class="form-label">Nombre Completo: </label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre aquí">
+                <label for="inputdomicilio" class="form-label fw-bolder">Domicilio:</label>
+                <input type="text" class="form-control fst-italic" id="inputdomicilio" placeholder="Calle  Num-ext  Num-int">
             </div>
+
             <div class="col-md-6">
-                <label for="telefono" class="form-label">Telefono: </label>
-                <input type="telefono" class="form-control" id="telefono" placeholder="Tu numero a 10 digitos">
+                <label for="ciudadInput" class="form-label fw-bolder">Ciudad:</label>
+                <input type="text" class="form-control fst-italic" id="ciudadInput" placeholder="Municipio y / o Alcaldia">
             </div>
-            <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Correo Electronico</label>
-                <input type="email" class="form-control" id="email" placeholder="@ejemplo.com">
-            </div>            
-            <div class="col-12">
-                <label for="domicilio" class="form-label">Domicilio: </label>
-                <input type="text" class="form-control" id="domicilio" placeholder="Calle  Num-ext  Num-int">
+
+            <div class="col-md-3">
+                <label for="edoInput" class="form-label fw-bolder">Estado:</label>
+                <input type="text" class="form-control fst-italic" id="edoInput" placeholder="Estado">
             </div>
-            <div class="col-md-6">
-                <label for="ciudad" class="form-label">Ciudad: </label>
-                <input type="text" class="form-control" id="ciudad">
+
+            <div class="col-md-3">
+                <label for="cpInput" class="form-label fw-bolder">C. P. :</label>
+                <input type="text" class="form-control fst-italic" id="cpInput" placeholder="codigo postal">
             </div>
-            <div class="col-md-4">
-                <label for="estado" class="form-label">Estado</label>
-                <select id="estado" class="form-select">
-                    <option selected>Opcion 1</option>
-                    <option>Opcion 2</option>
-                </select>
-            </div>
-            <div class="col-md-2">
-                <label for="codpostal" class="form-label">C. P. : </label>
-                <input type="text" class="form-control" id="codpostal">
-            </div>
+
             <div class="col-12">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="gridCheck">
@@ -87,22 +95,23 @@
             </div>
         </form>
         <fieldset class="row mb-3">
-            <legend class="col-form-label col-sm-2 pt-0">¿Qué Actividad quisieras tomar?</legend>
+            <legend class="">¿Qué Actividad quisieras tomar?</legend>
             <div class="col-sm-10">
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="taller" id="taller" value="opcion1" checked>
+                    <input class="form-check-input" type="radio" name="contacto" id="taller" value="opcion1" checked>
                     <label class="form-check-label" for="taller">Taller</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="curso" id="curso" value="opcion2">
+                    <input class="form-check-input" type="radio" name="contacto" id="curso" value="opcion2">
                     <label class="form-check-label" for="curso">Curso</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="agricultura" id="agricultura" value="opcion3">
+                    <input class="form-check-input" type="radio" name="contacto" id="agricultura" value="opcion3">
                     <label class="form-check-label" for="agricultura">Agricultura</label>
                 </div>
             </div>
           </fieldset>
+          
           <fieldset>
               <legend>Marca la siembra que te gustaria conocer</legend>
             <div class="row mb-3">
@@ -118,12 +127,13 @@
                 </div>
               </div>
           </fieldset>
+
           <div class="mb-3">
-            <label for="comentarios" class="form-label">Dejanos tus Comentarios</label>
-            <textarea class="form-control" id="comentarios" rows="3"></textarea>
+            <label for="comentarios" class="form-label fs-4">Dejanos tus Comentarios</label>
+            <textarea class="form-control fst-italic fs-6" id="comentarios" rows="3" placeholder="hasta 500 carateres"></textarea>
           </div>
           <div class="col-12">
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-warning">Enviar</button>
         </div>
     </div>
 
@@ -131,7 +141,7 @@
 
 
 
-
+<!-- 
             <form action="enviar.php" method="get" enctype="text/plain">
                 <fieldset>
                     <legend>Ingresa Tus Datos</legend>
@@ -168,14 +178,14 @@
                     <h3>Dejanos tus comentarios</h3>
                     <textarea name="comentario" id="comentarios" cols="60" rows="10"></textarea><br>
         
-                    <!--Botones para enviar registro o corregir informacion-->
+                    <!--  Botones para enviar registro o corregir informacion   --
                     <input type="submit" value="Enviar">
                     <input type="reset" value="Borrar">
                     <input type="button" value="Para JS">
         
                 </fieldset>
             </form>
-        </div>
+        </div> -->
 
     </main>
 
@@ -216,5 +226,8 @@
 
     </footer>
 </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

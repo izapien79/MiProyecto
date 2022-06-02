@@ -11,11 +11,60 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400;500&family=Estonia&family=M+PLUS+1:wght@400;500&family=Poppins:wght@500&display=swap" rel="stylesheet"> <!-- Font Famil -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- icon Awesome -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
     <div class="padre-ct">
+
+        <div class="container-fluid m-0 p-0">
+            <nav class="navbar navbar-expand-lg bg-secondary">
+                <div class="container-fluid">
+                  <a class="navbar-brand fs-2 fw-bold fst-italic text-warning" href="../index.html">Herramientas de la Experiencia, A.C.</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto fs-5">
+                      <li class="nav-item active">
+                        <a class="nav-link text-warning" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-warning" href="../pages/nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-warning" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          ¿Que Hacemos?
+                        </a>
+                        <ul class="dropdown-menu bg-secondary bg-opacity-75" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item text-warning fw-bold" href="../pages/cursotaller.html">Cursos y Talleres</a></li>
+                          <li><a class="dropdown-item text-warning fw-bold" href="../pages/agricultura.html">Agricultura</a></li>
+                          <!-- <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-warning" href="../pages/contacto.html">Contacto</a>
+                      </li>
+                      <!-- <li class="nav-item">
+                        <a class="nav-link disabled">Contacto/a>
+                      </li> -->
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2 fs-6" type="search" placeholder="Buscador" aria-label="Search">
+                      <button class="btn btn-warning" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </div>
+
+
+
+
         <header class="header-ct">
-            <div class="menu-ct">
+            <!-- <div class="menu-ct">
                 <div class="logo-ct">
                     <a href="../index.html">Herramientas de la Experiencia, A. C.</a>
                 </div>                
@@ -26,15 +75,15 @@
                     <a href="../pages/agricultura.html"><i class="fa-brands fa-pagelines"></i> Agricultura</a>
                     <a href="../pages/contacto.html"><i class="fa-solid fa-chalkboard-user"></i> Contacto</a>
                 </nav>
-                <!-- <div class="redes">
+                <-- <div class="redes">
                     <div><a href="https://www.facebook.com/" target="_blank">
                         <i class="fa-brands fa-facebook-square"></i>
                     </a></div>
                     <div><a href="https://www.instagram.com" target="_blank">
                         <i class="fa-brands fa-instagram-square"></i>
                     </a></div>   
-                </div> -->
-            </div>
+                </div> ->
+            /div -->
             <div class="texto-principal">
                 <h1>"Pensamos, realizamos y enseñamos generando experiencias significativas y de impacto para todo aquel que quiera participar."</h1>
             </div>
@@ -96,5 +145,8 @@
 
     </footer>
     </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -32,8 +32,10 @@ a {
     align-items: center;
     border-bottom: 1px solid rgba (255, 255, 255, .5);
     border: 1px solid #fff;
-    position: fixed;
+    /* position: fixed;
+    z-index: ; */
 }
+
 .logo {
     flex:1 1 auto;
 }
@@ -146,6 +148,7 @@ h1:hover {
 .slide img {
     /* width: 700px; */
     height: 65vh;
+    z-index: -1;
 }
 .card-img-top {
     height: 18em;

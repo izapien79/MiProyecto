@@ -11,51 +11,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400;500&family=Estonia&family=M+PLUS+1:wght@400;500&family=Poppins:wght@500&display=swap" rel="stylesheet"> <!-- Font Famil -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- icon Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/><!-- animacion -->
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
     <div class="padre">
-        <div class="container-fluid m-0 p-0">
-            <nav class="navbar navbar-expand-lg bg-secondary">
-                <div class="container-fluid">
-                  <a class="navbar-brand fs-2 fw-bold fst-italic text-warning" href="./index.html">Herramientas de la Experiencia, A.C.</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container-fluid p-0 position-fixed">
+            <nav class="navbar navbar-expand-lg bg-secondary navbar-toggleable-sm">
+                <!-- <div class="container-fluid"> -->
+                  <a class="navbar-brand fs-2 fw-bold fst-italic text-warning mx-3" href="./index.html">Herramientas de la Experiencia, A.C.</a>
+                  <button class="navbar-toggler navbar-toggler rigth" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-
-                  <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto fs-5">
+                  
+                  <div class="collapse navbar-collapse justify-content-end fs-5 mx-3" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-center">
                       <li class="nav-item active">
-                        <a class="nav-link text-warning" aria-current="page" href="./index.html">Inicio</a>
+                        <a class="nav-link text-warning" aria-current="page" href="./index.html"><i class="fa-solid fa-house"></i> Inicio</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-warning" href="./pages/nosotros.html">Nosotros</a>
+                        <a class="nav-link text-warning" href="./pages/nosotros.html"><i class="fa-solid fa-people-group"></i> Nosotros</a>
                       </li>
                       <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-warning" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-warning" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-hands-praying"></i>
                           ¿Que Hacemos?
                         </a>
                         <ul class="dropdown-menu bg-secondary bg-opacity-75" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item text-warning fw-bold" href="./pages/cursotaller.html">Cursos y Talleres</a></li>
-                          <li><a class="dropdown-item text-warning fw-bold" href="./pages/agricultura.html">Agricultura</a></li>
-                          <!-- <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                          <li><a class="dropdown-item text-warning fw-bold" href="./pages/cursotaller.html"><i class="fa-solid fa-pen-ruler"></i> Cursos y Talleres</a></li>
+                          <li><a class="dropdown-item text-warning fw-bold" href="./pages/agricultura.html"><i class="fa-brands fa-pagelines"></i> Agricultura</a></li>
                         </ul>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-warning" href="./pages/contacto.html">Contacto</a>
+                        <a class="nav-link text-warning" href="./pages/contacto.html"><i class="fa-solid fa-chalkboard-user"></i> Contacto</a>
                       </li>
-                      <!-- <li class="nav-item">
-                        <a class="nav-link disabled">Contacto/a>
-                      </li> -->
                     </ul>
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2 fs-6" type="search" placeholder="Buscador" aria-label="Search">
-                      <button class="btn btn-warning" type="submit">Search</button>
-                    </form>
                   </div>
-                </div>
+                <!-- </div> -->
               </nav>
         </div>
 
@@ -63,49 +55,25 @@
         
         
         <header class="header">
-            <!-- INICIO DE HEADER CON CSS 
-            <div class="menu">
-                <div class="logo">
-                    <a href="index.html">Herramientas de la Experiencia, A. C.</a>
-                </div>                
-                <nav class="nav">
-                    <a href="./index.html"><i class="fa-solid fa-house"></i> 
-                       <span class="off"> Inicio</span></a>
-                    <a href="./pages/nosotros.html"><i class="fa-solid fa-people-group"></i> <span class="off"> Nosotros</span></a>
-                    <a href="./pages/cursotaller.html"><i class="fa-solid fa-pen-ruler"></i> <span class="off"> Cursos y Talleres</span></a>
-                    <a href="./pages/agricultura.html"><i class="fa-brands fa-pagelines"></i> <span class="off"> Agricultura</span></a>
-                    <a href="./pages/contacto.html"><i class="fa-solid fa-chalkboard-user"></i> <span class="off"> Contacto</span></a>
-                </nav>
-
-                !-- <div class="redes">
-                    <div><a href="https://www.facebook.com/" target="_blank">
-                        <i class="fa-brands fa-facebook-square"></i>
-                    </a></div>
-                    <div><a href="https://www.instagram.com" target="_blank">
-                        <i class="fa-brands fa-instagram-square"></i>
-                    </a></div>   
-                </div> -->
-           <!-- </div>-->
-
             <div class="texto-principal">
                 <h1>"La vida entera es un gran experimento, entre más hagamos, más intenso viviremos, es como encender una antorcha; al iluminar el camino de otros, se ilumina el nuestro ¡en el mundo no se ha encontrado nada mejor!"</h1>
             </div>
         </header>
 
         <!-- CARROUSEL CON BOOTSTRAP -->
-        <div class="container p-3 m-1-1 mt-2 mb-2 bg-secondary opacity-100"> 
+        <div class="container"> 
             <div class="row">
                 <div class="col-sm-12">
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="./img/carrou-1.jpeg" class="d-block w-100" alt="carrou-1" width="520px" height="350px">
+                            <img src="./img/carrou-1.jpeg" class="d-block w-100" alt="carrou-1">
                           </div>
                           <div class="carousel-item">
-                            <img src="./img/carrou-2.jpeg" class="d-block w-100" alt="carrou-2" width="520px" height="350px">
+                            <img src="./img/carrou-2.jpeg" class="d-block w-100" alt="carrou-2">
                           </div>
                           <div class="carousel-item">
-                            <img src="./img/carrou-3.jpeg" class="d-block w-100" alt="carro-3" width="520px" height="350px">
+                            <img src="./img/carrou-3.jpeg" class="d-block w-100" alt="carrou-3">
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -123,111 +91,66 @@
             
         </div>
 
+        <div class="pinicio">
+          <h2 class="animate__animated animate__flip">¿Que Hacemos?</h2>
+      </div>
 
         <!-- CARDS CON BOOTSTRAP -->
-        <div class="container-cards p-3 m-1">
-            <h2 class="card-tit text-bg-secondary p-4 m-2-2 fs-1 fst-italic text-center">¿Qué Hacemos?</h2>
-            <div class="row-cards d-flex flex-row">
-                <div class="col-cards d-flex p-3 m-3 d-grid gap-3">
+        <div class="contaier p-3 d-flex justify-content-center">
+            <div class="row g-3">
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
                     <div class="card" style="width: 18rem; background: gray; text-align: justify; padding: 5px;">
-                        <img src="./img/img_talleres.png" class="card-img-top" alt="talleres">
-                        <div class="card-body">
-                          <h5 class="card-title text-center fs-4">Talleres</h5>
-                          <p class="card-text p-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="./pages/cursotaller.html" class="btn btn-outline-warning btn-lg text-white">Ver mas ...</a>
-                        </div>
+                      <img src="./img/img_talleres.png" class="card-img-top" alt="talleres">
+                      <div class="card-body">
+                        <h5 class="card-title text-center fs-4">Talleres</h5>
+                        <p class="card-text p-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="./pages/cursotaller.html" class="btn btn-outline-warning btn-lg text-white">Ver mas ...</a>
+                      </div>
                     </div>
-
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
                     <div class="card" style="width: 18rem; background: gray; text-align: justify; padding: 5px;">
-                        <img src="./img/img_cursos.png" class="card-img-top" alt="cursos">
-                        <div class="card-body">
-                          <h5 class="card-title text-center fs-4">Cursos</h5>
-                          <p class="card-text p-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="./pages/cursotaller.html" class="btn btn-outline-warning btn-lg text-white">Ver mas ...</a>
-                        </div>
+                      <img src="./img/img_cursos.png" class="card-img-top" alt="cursos">
+                      <div class="card-body">
+                        <h5 class="card-title text-center fs-4">Cursos</h5>
+                        <p class="card-text p-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="./pages/cursotaller.html" class="btn btn-outline-warning btn-lg text-white">Ver mas ...</a>
+                      </div>  
                     </div>
-
+                  
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
                     <div class="card" style="width: 18rem; background: gray; text-align: justify; padding: 5px;">
-                        <img src="./img/img-agricul.jpg" class="card-img-top" alt="agricul" height="41%">
-                        <div class="card-body">
-                          <h5 class="card-title text-center fs-4">Agricultura</h5>
-                          <p class="card-text p-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="./pages/agricultura.html" class="btn btn-outline-warning btn-lg text-white">Ver mas ...</a>
-                        </div>
+                      <img src="./img/img-agricul.jpg" class="card-img-top" alt="agricul">
+                      <div class="card-body">
+                        <h5 class="card-title text-center fs-4">Agricultura</h5>
+                        <p class="card-text p-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="./pages/agricultura.html" class="btn btn-outline-warning btn-lg text-white">Ver mas ...</a>
+                      </div>
                     </div>
-
-                    <div class="card" style="width: 18rem; background: gray; text-align: justify; padding: 5px;">
-                        <img src="./img/img_donatarios.jpg" class="card-img-top" alt="donatarios" height="41%">
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                      <div class="card" style="width: 18rem; background: gray; text-align: justify; padding: 5px;">
+                        <img src="./img/img_donatarios.jpg" class="card-img-top" alt="donatarios">
                         <div class="card-body">
                           <h5 class="card-title text-center fs-4">Donatarios</h5>
                           <p class="card-text p-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                           <a href="#" class="btn btn-outline-warning btn-lg text-white">Ver mas ...</a>
-                        </div>
-                    </div>
-
+                        </div>  
+                      </div>
                 </div>
-
             </div>
-
         </div>
 
 
 
-  
-        <!-- MAIN -->
-    <!-- <section class="section">
-        <h2 class="section-tit">¿Qué Hacemos?</h2>
-        <div class="articulos">
-            <article class="article">
-                <img src="./img/img_talleres.png" alt="taller">
-                <h2>Talleres</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolor, a vero distinctio repudiandae unde?</p>
-                <a href="#">Leer más ...</a>
-            </article>
-            <article class="article">
-                <img src="./img/img_cursos.png" alt="curso">
-                <h2>Cursos</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolor, a vero distinctio repudiandae unde?</p>
-                <a href="#">Leer más ...</a>
-            </article>
-            <article class="article">
-                <img src="./img/img-agricul.jpg" alt="agricul">
-                <h2>Agricultura</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolor, a vero distinctio repudiandae unde?</p>
-                <a href="#">Leer más ...</a>
-            </article>
-            <article class="article">
-                <img src="./img/img_donatarios.jpg" alt="">
-                <h2>Donatarios</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolor, a vero distinctio repudiandae unde?</p>
-                <a href="#">Leer más ...</a>
-            </article>
-            <nav class="navegacion">
-                <a href="index.html">Inicio</a>
-                <a href="./pages/nosotros.html">2</a>
-                <a href="./pages/cursotaller.html">3</a>
-                <a href="./pages/agricultura.html">4</a>
-                <a href="./pages/contacto.html">Final</a>
-            </nav>
-        </div>
-            
-    </section> -->
 
 
 
-
-
+        <!-- FOOTER -->
     <footer class="footerpadre">
         <div class="footerpadre02">
-            <div class="footerpadre02--enlaces">
-                <h4>Enlaces</h4>
-                    <a href="./index.html">Inicio</a>
-                    <a href="./pages/nosotros.html">Nosotros</a>
-                    <a href="./pages/cursotaller.html">Cursos y Talleres</a>
-                    <a href="./pages/agricultura.html">Agricultura</a>
-                    <a href="./pages/contacto.html">Contacto</a>
-            </div>
-        
+                    
             <div class="footerpadre02--redes">
                 <h4>Siguenos en Redes</h4>
                 <a href="https://www.facebook.com/" target="_blank">
@@ -250,7 +173,7 @@
             
                 
         </div>
-        <p>© 2022 Herramientas de la Experiencia, A. C. - Todos los derechos reservados</p>
+        <p class="footerderechos">© 2022 Herramientas de la Experiencia, A. C. - Todos los derechos reservados</p>
 
     </footer>
     </div>

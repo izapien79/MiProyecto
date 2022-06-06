@@ -12,7 +12,8 @@ a {
 
 .padre {
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
+    /* flex-flow: column nowrap; */
 }
 .header {
     background: url('https://i.picsum.photos/id/143/3600/2385.jpg?hmac=gSMmnYrmuP5BJ47kmErfYdYu1L1GLePM1SNm-D2lqiA');
@@ -67,19 +68,7 @@ a {
         font-size: 20px;
         color:#f7e709;
     }
-
-/* .redes { 
-    flex: 1 1 auto;
-    display: flex;
-}
-    .redes a {
-        font-size: 20px;
-        color: #fff;
-        padding: 0 8px;
-    }
-    .redes a:hover{
-        color:#f7e709;
-    } */
+    
 
 .texto-principal {
     /* background: #f07b3f; */
@@ -117,76 +106,51 @@ h1:hover {
 }
 
 /* Main CSS PAGINA INICIO */
-.section {
-    background: #444;
+.pinicio { 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.section-tit {
+    background: #444;
     font-family: 'Courgette', cursive;
+    color: yellow;
+    margin: 0;
+    padding: 5px;
+}
+.pinicio h2 {
     color: yellow;
     font-style: oblique;
     font-size: 50px;
-    word-spacing: 5px;
-    letter-spacing: 10px;
     text-align: center;
     margin: 20px;
 }
-
-.articulos{
-    background: #f7f7f7;
-    flex: 2 1 auto; /* estable el tamaño de mi seccion 2 veces de 3 */
-    display: flex;
-    flex-flow: row wrap; /* para que queden uno a lado de otro o se pase a la sig fila*/
-}
-.article {
-    flex: 1 1 40%; /* estable tamaño de forma equivalente para todos */
-    color: #444;
-    font-size: 13px;
-    letter-spacing: 1px;
-    margin: 10px 20px 10px 20px;
-    flex: 1 1 45%;
-    background: gray;
-    border-radius: 10px;
-}
-.article img {
-    width: 100%;
-}
-.article a {
-    color: #fff;
-    font-size: 13px;
-    padding: 10px 10px;
-    background: #000;
-    margin: 10px 0;
-    display: inline-block;
-}
-.article a:hover{
-    background: #546cc3;
-}
-h2 {
-    font-size: 25px;
-    text-transform: uppercase;
-    padding: 0px 0 10px 0;
-    color:black;
-}
-.navegacion {
-    background: #000;
-    flex: 1 1 100%; /* ocupara el 100% de ancho */
+/* .pinicio h3 { 
+    font-style: oblique;
+    font-size: 30px;
+    text-align: center;
     margin: 10px;
+    padding: 10px;
+} */
+.pinicio p {
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    word-spacing: 5px;
+    color: white;
+    margin-left: 25px;
+    margin-right: 25px;
 }
-    .navegacion a {
-        color:#fff;
-        font-size: 15px;
-        text-transform: uppercase;
-        padding: 0 10px;
-        letter-spacing: 2px;
-    }
-    .navegacion a:hover{
-        color:#f7e709;
-        font-weight: bold;
-    }
+
+.slide {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.slide img {
+    /* width: 700px; */
+    height: 65vh;
+}
+.card-img-top {
+    height: 18em;
+}
+
 
 /* Footer CSS */
 .footerpadre {
@@ -198,9 +162,11 @@ h2 {
     align-items: center;
     border-radius: 5px;
 }
-.footerpadre p{
+.footerderechos {
     color: white;
     font-weight: bold;
+    margin-bottom: 3px;
+    font-size: 20px;
 }
 .footerpadre02 {
     /* background-color: aqua; */
@@ -209,57 +175,38 @@ h2 {
     display: flex;
     justify-content: center; /* alinea horizoltalmente */
     align-items: center; /* alinea verticalmente */
-    flex-wrap: wrap; /* por si no caben en la misma linea se acomode abajo */
-}
-.footerpadre02--enlaces {
-    width: 420px;
-    height: 80%;
-    /* background: blue; */
-    color: white;
-    /* font-weight: bold; */
-    font-size: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* letter-spacing: 5px; */
-}
-.footerpadre02--enlaces a {
-    color: white;
-    font-size: 15px;
-    text-decoration: none;
-}
-.footerpadre02--enlaces a:hover{
-    color: #f7e709;
-    font-weight: bold;
+    flex-wrap: wrap;
 }
 .footerpadre02--redes {
+    /* background-color: red; */
     width: 420px;
     height: 80%;
     color: white;
-    /* background: red; */
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
+    /* flex-direction: column;
+    margin: 10px; */
+    
 }
 .footerpadre02--redes a {
-    font-size: 30px;
+    font-size: 40px;
     letter-spacing: 5px;
 }
 .footerpadre02--contacto {
+    /* background-color: blue; */
     width: 420px;
     height: 80%;
     color: white;
-    /* background-color: yellow; */
-    display: flex;
-    flex-direction: column;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
+    /* flex-direction: column; */
 }
 .footerpadre02--contacto a {
-    font-size: 30px;
+    font-size: 40px;
     letter-spacing: 5px;
 }
 /* iconos redes */
@@ -287,6 +234,7 @@ footer .fa-whatsapp-square {
 footer .fa-whatsapp-square:hover{
     color: green;
 }
+
 
 
 /* PAGINA NOSOTROS CSS */
@@ -694,71 +642,234 @@ h1 {
     margin-right: 100px;
 }
 
-
+/* ------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+ */
 /* Mediaqeries Responsive */
-@media all and (max-width: 1120px){
-    .section{
+@media (min-width: 768px) and (max-width: 992px) {
+    .texto-principal {
+        height: 200px;
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        flex: auto;
+        margin-top: 100px;
     }
-    /* .logo a {
-        font-size: 15px;
+    .texto-principal h1 {
+        background-color: rgba(0, 0, 0, .5);
+        font-family: 'Courgette', cursive;
+        font-size: 25px;
+        color:#f7e709;
+        font-weight: 200px;
+        text-align: center;
+        line-height: 1.6;
+        margin-left: 90px;
+        margin-right: 90px;
+        transition: all 3s;
+    }
+    h1:hover {
+        background-color:rgba(255, 255, 0, 0.63);
+        font-family: 'Courgette', cursive;
+        font-size: 25px;
+        color:black;
+        font-weight: 200px;
+        text-align: center;
+        line-height: 1.6;
+        margin-left: 90px;
+        margin-right: 90px;
+    
+    }
+
+    /* .pinicio { 
+        display: flex;
+        flex-direction: column;
+        background: #444;
+        font-family: 'Courgette', cursive;
+        color: yellow;
+        margin: 0;
+        padding: 5px;
+    }
+    .pinicio h2 {
+        color: yellow;
+        font-style: oblique;
+        font-size: 30px;
+        text-align: center;
+        margin: 15px;
     } */
-    menu {
-        flex-direction: colum;
-        height: auto;
-    }
-    h1{
-        font-size: 15px;
-    }
-    .texto-principal{
-        height: 450px;
-    }
 
-}
-
-@media all and (max-width:600px){
-    .articulos { 
+        /* Footer CSS */
+    .footerpadre {
+        background-color: black;
+        padding: 10PX;
+        margin: 10px;
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
     }
-    h1{
+    .footerderechos {
+        display: flex;
+        align-items: flex-end;
         font-size: 15px;
-    }
-    .texto-principal{
-        height: 450px;
-    }
-    .logo a {
-        font-size: 15px;
-    }
-}
 
-@media all and (max-width:762px){
-    .articulos { 
-        flex-direction: column;
     }
-    h1{
-        font-size: 15px;
+    
+    .footerpadre02 {
+        /* background-color: aqua; */
+        width: 90vw;
+        height: 20vh;
+        display: flex;
+        justify-content: center; /* alinea horizoltalmente */
+        align-items: center; /* alinea verticalmente */
+        flex-wrap: wrap;
     }
-    .logo a {
+    .footerpadre02--redes {
+        /* background-color: violet; */
+        width: 300px;
+        height: 80%;
+        color: white;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        /* flex-direction: column;
+        margin: 10px; */
+        
+    }
+    .footerpadre02--redes h4 {
         font-size: 20px;
     }
+    .footerpadre02--redes a {
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
+    .footerpadre02--contacto {
+        /* background-color: gray; */
+        width: 300px;
+        height: 80%;
+        color: white;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        /* flex-direction: column; */
+    }
+    .footerpadre02--contacto h4 {
+        font-size: 20px;
+    }
+    .footerpadre02--contacto a {
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
 }
 
-@media all and (max-width:650px){
-    .off {
-        display: none;
+
+
+/* ++++++++++++PARA MOBILE+++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media (max-width: 767px){
+    .header {
+        background: url('https://i.picsum.photos/id/143/3600/2385.jpg?hmac=gSMmnYrmuP5BJ47kmErfYdYu1L1GLePM1SNm-D2lqiA');
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+        
     }
-    .nav a {
-        font-size: 25px;
+    .texto-principal {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: auto;
+        margin-top: 100px;
     }
-    .logo a {
+    .texto-principal h1 {
+        background-color: rgba(0, 0, 0, .5);
+        font-family: 'Courgette', cursive;
+        font-size: 20px;
+        color:#f7e709;
+        font-weight: 200px;
+        text-align: center;
+        line-height: 1.3;
+        margin-left: 80px;
+        margin-right: 80px;
+        transition: all 3s;
+    }
+    h1:hover {
+        background-color:rgba(255, 255, 0, 0.63);
+        font-family: 'Courgette', cursive;
+        font-size: 20px;
+        color:black;
+        font-weight: 200px;
+        text-align: center;
+        line-height: 1.3;
+        margin-left: 80px;
+        margin-right: 80px;
+    
+    }
+
+        /* Footer CSS */
+    .footerpadre {
+        background-color: black;
+        padding: 10PX;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+    }
+    .footerderechos {
+        display: flex;
+        align-items: flex-end;
+        font-size: 12px;
+
+    }
+    
+    .footerpadre02 {
+        /* background-color: aqua; */
+        width: 90vw;
+        height: 20vh;
+        display: flex;
+        justify-content: center; /* alinea horizoltalmente */
+        align-items: center; /* alinea verticalmente */
+        flex-wrap: wrap;
+    }
+    .footerpadre02--redes {
+        /* background-color: red; */
+        width: 200px;
+        height: 60%;
+        color: white;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        /* flex-direction: column;
+        margin: 10px; */
+        
+    }
+    .footerpadre02--redes h4 {
         font-size: 15px;
     }
-    /* .footerpadre {
-        display: flex;
-        flex-flow:column ;
+    .footerpadre02--redes a {
+        font-size: 25px;
+        letter-spacing: 5px;
     }
-    .footerpadre02 {
-        display: flex;
-        flex-wrap: nowrap;
-    } */
+    .footerpadre02--contacto {
+        /* background-color: blue; */
+        width: 200px;
+        height: 60%;
+        color: white;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        /* flex-direction: column; */
+    }
+    .footerpadre02--contacto h4 {
+        font-size: 15px;
+    }
+    .footerpadre02--contacto a {
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
 }

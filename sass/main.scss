@@ -1,0 +1,58 @@
+/* maps */
+
+$parrafos: (
+    mision: yellow,
+    vision: rgb(206, 206, 63),
+    objetivo: rgb(160, 160, 84)
+);
+
+@each $nombre, $valor in $parrafos {
+    .parrf-#{$nombre} {
+        color: $valor;
+    }
+}
+
+$parrafocolor : (
+    fondo: gray,
+    sin-texto: black,
+    alerta: yellow
+);
+
+.formato-muestra {
+    background: map-get($parrafocolor, titulo);
+    padding: 20px;
+}
+
+/* extend */
+.btn {
+    display: inline;
+    width: 200px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    color: white;
+}
+
+.btn--verde {
+    @extend .btn;
+    background-color: green;
+    color: white;
+}
+
+.btn--azul {
+    @extend .btn;
+    background-color: rgb(41, 41, 250);
+    color: white;
+}
+
+/* mixins */
+@mixin boton ($col, $bg) {
+    display: inline-block;
+    padding: 10px;
+    color: $col;
+    background: $bg;
+}
+.boton--borrar {
+    @include boton (orange, black);
+}
+

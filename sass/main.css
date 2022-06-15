@@ -1,0 +1,44 @@
+/* maps */
+.parrf-mision {
+  color: yellow;
+}
+
+.parrf-vision {
+  color: rgb(206, 206, 63);
+}
+
+.parrf-objetivo {
+  color: rgb(160, 160, 84);
+}
+
+.formato-muestra {
+  padding: 20px;
+}
+
+/* extend */
+.btn, .btn--azul, .btn--verde {
+  display: inline;
+  width: 200px;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  color: white;
+}
+
+.btn--verde {
+  background-color: green;
+  color: white;
+}
+
+.btn--azul {
+  background-color: rgb(41, 41, 250);
+  color: white;
+}
+
+/* mixins */
+.boton--borrar {
+  display: inline-block;
+  padding: 10px;
+  color: orange;
+  background: black;
+}/*# sourceMappingURL=main.css.map */

@@ -10,6 +10,7 @@ a {
     text-decoration: none;
 }
 
+
 .padre {
     display: flex;
     flex-direction: column;
@@ -32,6 +33,15 @@ a {
     align-items: center;
     border-bottom: 1px solid rgba (255, 255, 255, .5);
     border: 1px solid #fff;
+}
+.logo-img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.logo-img:hover {
+    background: #ffc107;
 }
 
 .logo {
@@ -60,13 +70,13 @@ a {
         margin-bottom: 5px;
     }
     .nav a:hover{
-        color:#f7e709;
+        color:#ffc107;
         font-weight: bold;
         font-size: 15px;
     }
     .nav a .fa-house {
         font-size: 20px;
-        color:#f7e709;
+        color:#ffc107;
     }
     
 
@@ -80,10 +90,10 @@ a {
     margin-top: 200px;
 }
 .texto-principal h1 {
-    background-color: rgba(0, 0, 0, .5);
+    /* background-color: rgba(0, 0, 0, .5); */
     font-family: 'Courgette', cursive;
     font-size: 30px;
-    color:#f7e709;
+    color:#ffc107;
     font-weight: 200px;
     text-align: center;
     line-height: 1.9;
@@ -93,7 +103,7 @@ a {
 }
 
 h1:hover {
-    background-color:rgba(255, 255, 0, 0.63);
+    background-color:#ffc107;
     font-family: 'Courgette', cursive;
     font-size: 30px;
     color:black;
@@ -109,18 +119,20 @@ h1:hover {
 .pinicio { 
     display: flex;
     flex-direction: column;
-    background: #444;
-    font-family: 'Courgette', cursive;
-    color: yellow;
+    /* background: #444; */
+    /* font-family: 'Courgette', cursive; */
+    color: #ffc107;
     margin: 0;
     padding: 5px;
 }
 .pinicio h2 {
-    color: yellow;
+    color: #ffc107;
     font-style: oblique;
-    font-size: 50px;
+    font-size: 70px;
     text-align: center;
     margin: 20px;
+    font-weight: bolder;
+    text-shadow:  rgb(153, 153, 153) 0.1em 0.1em 0.1em;
 }
 /* .pinicio h3 { 
     font-style: oblique;
@@ -147,9 +159,11 @@ h1:hover {
     /* width: 700px; */
     height: 65vh;
     z-index: -1;
+    object-fit: cover;
 }
 .card-img-top {
-    height: 18em;
+    height: auto;
+    object-fit: cover;
 }
 
 
@@ -164,7 +178,7 @@ h1:hover {
     border-radius: 5px;
 }
 .footerderechos {
-    color:  #ffc107;
+    color: white;
     font-weight: bold;
     margin-bottom: 3px;
     font-size: 20px;
@@ -172,7 +186,7 @@ h1:hover {
 .footerpadre02 {
     /* background-color: aqua; */
     width: 95vw;
-    height: 20vh;
+    height: 8vh;
     display: flex;
     justify-content: center; /* alinea horizoltalmente */
     align-items: center; /* alinea verticalmente */
@@ -199,7 +213,7 @@ h1:hover {
     /* background-color: blue; */
     width: 420px;
     height: 80%;
-    color:  #ffc107;
+    color: #ffc107;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -212,25 +226,25 @@ h1:hover {
 }
 /* iconos redes */
 footer .fa-facebook-square {
-    color: yellow;
+    color: #ffc107;
 }
 footer .fa-brands:hover{
     color: green;
 }
 footer .fa-instagram-square {
-    color: yellow;
+    color: #ffc107;
 }
 footer .fa-solid:hover{
     color: green;
 }
 footer .fa-square-envelope {
-    color: yellow;
+    color: #ffc107;
 }
 footer .fa-square-envelope:hover{
     color: green;
 }
 footer .fa-whatsapp-square {
-    color: yellow;
+    color: #ffc107;
 }
 footer .fa-whatsapp-square:hover{
     color: green;
@@ -299,18 +313,20 @@ footer .fa-whatsapp-square:hover{
 .pnosotros { 
     display: flex;
     flex-direction: column;
-    background: #444;
-    font-family: 'Courgette', cursive;
-    color: yellow;
+    /* background: #444; */
+    /* font-family: 'Courgette', cursive; */
+    color: #ffc107;
     margin: 0;
     padding: 5px;
 }
 .pnosotros h2 {
-    color: yellow;
+    color: #ffc107;
     font-style: oblique;
-    font-size: 50px;
+    font-size: 70px;
     text-align: center;
     margin: 20px;
+    font-weight: bolder;
+    text-shadow:  rgb(153, 153, 153) 0.1em 0.1em 0.2em;
 }
 .pnosotros h3 { 
     font-style: oblique;
@@ -324,10 +340,14 @@ footer .fa-whatsapp-square:hover{
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     word-spacing: 5px;
-    color: white;
+    color: black;
     margin-left: 25px;
     margin-right: 25px;
 }
+/* .flush-headingOne {
+    background-color: #6c757d;
+} */
+
 .tit-equipo { 
     margin: 20px;
     font-style: oblique;
@@ -444,6 +464,17 @@ h1 {
 img { 
     width: 100%;
 }
+main h2 {
+    color: #ffc107;
+    font-style: oblique;
+    font-size: 70px;
+    text-align: center;
+    margin: 20px;
+    font-weight: bolder;
+    text-shadow:  rgb(153, 153, 153) 0.1em 0.1em 0.1em;
+    letter-spacing: 10px;
+    word-spacing: 5px;
+}
 .grid-container { 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -473,17 +504,6 @@ img {
     filter: opacity(0.9);
     transform: scale(1.04);
 }
-
-/* Media querie Cursos y Talleres*/
-/* @media (min-width: 600px) {
-    .wide { 
-        grid-column: span 2;
-    }
-    
-    .tall {
-        grid-row: span 2;
-    }
-} */
 
 
 
@@ -557,12 +577,21 @@ h1 {
     background: rgba(0, 0, 0, .5);
     font-family: 'Courgette', cursive;
     font-size: 30px;
-    color:#f7e709;
+    color:#ffc107;
     font-weight: 300;
     text-align: center;
     line-height: 1.9;
     margin-left: 100px;
     margin-right: 100px;
+}
+.contenedor_ag h2{
+    color: #ffc107;
+    font-style: oblique;
+    font-size: 70px;
+    text-align: center;
+    margin: 20px;
+    font-weight: bolder;
+    text-shadow:  rgb(153, 153, 153) 0.1em 0.1em 0.2em;
 }
 
 /* PAGINA CONTACTO CSS */
@@ -681,6 +710,13 @@ h1 {
     
     }
 
+    .logo-img {
+        width: 100px;
+        height: auto;
+        border-radius: 10px;
+        margin-left: 20px;
+    }
+
     /* .pinicio { 
         display: flex;
         flex-direction: column;
@@ -700,7 +736,7 @@ h1 {
 
         /* Footer CSS */
     .footerpadre {
-        background-color: black;
+        background-color: #6c757d;
         padding: 10PX;
         margin: 10px;
         display: flex;
@@ -718,7 +754,7 @@ h1 {
     .footerpadre02 {
         /* background-color: aqua; */
         width: 90vw;
-        height: 20vh;
+        height: 10vh;
         display: flex;
         justify-content: center; /* alinea horizoltalmente */
         align-items: center; /* alinea verticalmente */
@@ -728,7 +764,7 @@ h1 {
         /* background-color: violet; */
         width: 300px;
         height: 80%;
-        color: white;
+        color: #ffc107;
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -766,7 +802,7 @@ h1 {
 
 
 
-/* ++++++++++++PARA MOBILE+++++++++++++++++++++++++++++++++++++++++++++++++
+/* ++++++++++++PARA TABLET+++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 @media (max-width: 767px){
     .header {
@@ -808,10 +844,16 @@ h1 {
         margin-right: 80px;
     
     }
+    .logo-img {
+        width: 80px;
+        height: auto;
+        border-radius: 10px;
+        margin-left: 10px;
+    }
 
         /* Footer CSS */
     .footerpadre {
-        background-color: black;
+        background-color: #6c757d
         padding: 10PX;
         margin: 10px;
         display: flex;
@@ -823,13 +865,12 @@ h1 {
         display: flex;
         align-items: flex-end;
         font-size: 12px;
-
     }
     
     .footerpadre02 {
         /* background-color: aqua; */
         width: 90vw;
-        height: 20vh;
+        height: 10vh;
         display: flex;
         justify-content: center; /* alinea horizoltalmente */
         align-items: center; /* alinea verticalmente */
@@ -839,7 +880,7 @@ h1 {
         /* background-color: red; */
         width: 200px;
         height: 60%;
-        color: white;
+        color: #ffc107;
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -859,7 +900,7 @@ h1 {
         /* background-color: blue; */
         width: 200px;
         height: 60%;
-        color: white;
+        color: #ffc107;
         display: inline-flex;
         align-items: center;
         justify-content: center;

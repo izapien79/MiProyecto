@@ -17,7 +17,7 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/><!-- animacion -->    
-    <link rel="stylesheet" href="../sass/main.css">
+    <!-- <link rel="stylesheet" href="../sass/main.css"> -->
 </head>
 <body>
     <div class="padre-con">
@@ -25,6 +25,11 @@
         <div class="container-fluid p-0 fixed-top">
             <nav class="navbar navbar-expand-lg bg-secondary navbar-toggleable-sm">
                 <!-- <div class="container-fluid"> -->
+                <div>
+                    <a href="../index.html">
+                        <img  class="logo-img" src="../img/logo_heexac.png" alt="logo">
+                    </a>
+                </div>
                   <a class="navbar-brand fs-2 fw-bold fst-italic text-warning mx-3" href="../index.html">Herramientas de la Experiencia, A.C.</a>
                   <button class="navbar-toggler navbar-toggler rigth" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -158,8 +163,7 @@
             <textarea class="form-control fst-italic fs-6" id="comentarios" rows="3" placeholder="hasta 500 carateres"></textarea>
           </div>
           <div class="col-12 d-flex justify-content-center">
-            <button type="submit" class="btn btn-primary btn--azul">Enviar</button>
-            <button type="submit" class="btn btn-primary boton--borrar">Borrar</button>
+            <button type="submit" class="btn btn-primary">Enviar</button>
         </div>
     </div>
 
@@ -167,51 +171,7 @@
 
 
 
-<!-- 
-            <form action="enviar.php" method="get" enctype="text/plain">
-                <fieldset>
-                    <legend>Ingresa Tus Datos</legend>
-        
-                    <label for="nombre">Nombre: </label>
-                    <input type="text" name="nombre" placeholder="Aqui tu nombre y apellidos" requerired>
-                    <br>
-                    <label for="correo">Correo: </label>
-                    <input type="text" name="correo" placeholder="Aqui tu correo electronico" requerired>
-                    <br>
-                    <label for="telefono">Telefono: </label>
-                    <input type="text" name="tel" placeholder="Aqui tu telefono" requerired>
-                    <hr>
-        
-                    <div>Que te gustaria aprender?</div>
-                    <label for="taller">Taller</label>
-                    <input type="radio" name="aprender" value="taller">
-                    <label for="curso">Cursos</label>
-                    <input type="radio" name="aprender" value="curso">
-                    <label for="agricultura">Agricultura</label>
-                    <input type="radio" name="aprender" value="agricultura">
-                    <hr>
 
-                    <div>Que tipo de Cosecha haz  hecho?</div>
-                    <label for="talla">Maiz</label>
-                    <input type="checkbox" name="cosecha" value="maiz">
-                    <label for="talla">Hongos</label>
-                    <input type="checkbox" name="cosecha" value="hongo">
-                    <label for="talla">Limones</label>
-                    <input type="checkbox" name="cosecha" value="limon">
-                    <label for="talla">Naranjas</label>
-                    <input type="checkbox" name="cosecha" value="naranja">
-        
-                    <h3>Dejanos tus comentarios</h3>
-                    <textarea name="comentario" id="comentarios" cols="60" rows="10"></textarea><br>
-        
-                    <!--  Botones para enviar registro o corregir informacion   --
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar">
-                    <input type="button" value="Para JS">
-        
-                </fieldset>
-            </form>
-        </div> -->
 
     </main>
 
